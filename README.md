@@ -29,3 +29,6 @@ Sensor → Ingestion Service → Processing Service → Storage Service → MySQ
 1. Clone the repo
 2. Run using:
    mvn spring-boot:run
+[Sensor]
+   ↓
+[Ingestion Service] → [Processing Service] → [Database]
