@@ -1,40 +1,69 @@
-# IoT Data Monitoring Microservices System
+# 🚀 IoT Data Monitoring Microservices System
 
-## Overview
-This project is a scalable backend system designed to ingest, process, and store real-time IoT sensor data using Spring Boot and microservices architecture.
+## 📌 Overview
+This project is a scalable backend system designed to ingest, process, and store real-time IoT sensor data using **Spring Boot** and a **microservices architecture**.
 
-## Architecture
-Sensor → Ingestion Service → Processing Service → Storage Service → MySQL
+It simulates a real-world IoT pipeline handling high-frequency sensor data with asynchronous processing and modular service design.
 
-## Features
-- REST APIs for real-time sensor data ingestion
-- Asynchronous processing for high-frequency data streams
-- Modular microservices-based design
-- JWT Authentication for secure access
-- Optimized database queries using JPA/Hibernate
+---
 
-## Tech Stack
-- Java, Spring Boot
-- MySQL
-- JPA/Hibernate
-- REST APIs
-- Async Processing
+## 🏗️ Architecture
+Sensor
+↓
+Ingestion Service → Processing Service → Storage Service → MySQL
 
-## Microservices Breakdown
-- Ingestion Service: Receives sensor data
-- Processing Service: Filters and processes incoming data
-- Storage Service: Persists data in MySQL
+---
 
-## How to Run
-1. Clone the repo
-2. Run using:
-   mvn spring-boot:run
+## ⚙️ Features
 
-[Sensor]
-   ↓
-[Ingestion Service] → [Processing Service] → [Database]
+- 🚀 REST APIs for real-time sensor data ingestion
+- ⚡ Asynchronous processing for high-frequency data streams
+- 🧩 Modular microservices-based architecture
+- 🔐 JWT Authentication for secure API access
+- 📊 Optimized database operations using JPA/Hibernate
 
-## API Endpoints
+---
 
-POST /api/sensor-data
-GET /api/sensor-data/{id}
+## 🧠 Microservices Breakdown
+
+- **Ingestion Service**
+  - Receives incoming sensor data via APIs
+
+- **Processing Service**
+  - Filters, validates, and processes sensor data
+
+- **Storage Service**
+  - Persists processed data into MySQL database
+
+---
+
+## 🛠️ Tech Stack
+
+- **Backend:** Java, Spring Boot  
+- **Database:** MySQL  
+- **ORM:** JPA / Hibernate  
+- **Architecture:** Microservices  
+- **Other:** REST APIs, Async Processing, JWT Auth  
+
+---
+
+## 📡 API Endpoints
+
+| Method | Endpoint | Description |
+|--------|--------|-------------|
+| POST | /api/sensor-data | Submit sensor data |
+| GET | /api/sensor-data/{id} | Fetch sensor data |
+
+---
+
+## ▶️ How to Run
+
+```bash
+# Clone the repository
+git clone https://github.com/jancysen/iot-microservices-system.git
+
+# Navigate to project
+cd iot-microservices-system
+
+# Run the application
+mvn spring-boot:run
